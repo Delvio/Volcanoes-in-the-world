@@ -92,8 +92,6 @@ for (
 
 # Adds the layers fo each section to the map
 map.add_child(fgv)
-map.add_child(folium.TileLayer("cartodbdark_matter"))
-map.add_child(folium.TileLayer("stamentoner"))
 map.add_child(folium.TileLayer("stamenterrain"))
 map.add_child(folium.TileLayer("cartodbpositron"))
 map.add_child(folium.TileLayer("stamenwatercolor"))
@@ -102,6 +100,3 @@ map.add_child(folium.LayerControl())
 
 # output on a HTML file
 map.save("index.html")
-
-
-# //TODO: hay que crear la base de datos actualizada para que se vean las lineas de datos del volcano
